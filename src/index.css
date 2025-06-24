@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+:root{
+  --main-color:	#239e23;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body, #root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.bg-main{
+  color: var(--main-color); 
+}
+
+.font-sm{
+  font-size: 14px;
+}
+
+.back{
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.product{
+  transition: .5s;
+}
+
+.product:hover{
+  /* transform: translate(-10px,-10px); */
+  box-shadow: 1px 1px 15px gray;
+  /* background-color: #1a1a1a;
+  color: white; */
+}
+
+.fixed-height{
+  height: 300px;
+}
+
+.testing-color{
+  background:#a3a3a1;
+}
+
+.product .btn{
+  transform: translateY(100%);
+  opacity: 0;
+  transition: .5s;
+  }
+  
+  .product:hover .btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product .btn:hover{
+  box-shadow: 0 0 10px green;
+}
+
+.links{
+  text-decoration: none;
+}
